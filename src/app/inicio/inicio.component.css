@@ -1,0 +1,17 @@
+
+.container-fluid{
+    align-items: center;
+}
+.text-logo{
+    font-family: impact;
+}
+.navbar-brand{
+    text-align: center;
+}
+
+.d-flex{
+    margin: 30px;
+}
+
+
+

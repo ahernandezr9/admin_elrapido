@@ -1,0 +1,153 @@
+<div class="container">
+    <div class="card m-5">
+        <div class="card-header" style="text-align: center;">
+            <span>INFORMACIÓN DEL VIAJE</span>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="row ruta m-1" style="background-color: white;">
+                    <div class="col">
+                        <span class="ciudad">San Juan de Lurigancho</span><br>
+                        <span class="terminal">TERMINAL SJL</span><br>
+                        <span class="tipo">Origen</span><br>
+                        <span class="direccion">AV. SANTA ROSA</span>
+                    </div>
+                    <div class="col">
+                        <span class="ciudad">Cusco</span><br>
+                        <span class="terminal">TERMINAL CUSCO</span><br>
+                        <span class="tipo">Destino</span><br>
+                        <span class="direccion">JR. LETICIA</span>
+                    </div>
+
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row m-1">
+                    <div class="col">
+                        <span>Total precio</span><br>
+                        <i class="bx bx-money"></i>
+                        <span> S/. </span>
+
+                    </div>
+                    <div class="col" style="text-align: center;">
+                        <span>N° Asientos</span><br>
+                        <i class="bx bx-street-view"></i>
+                        <span> 4</span>
+
+                    </div>
+                    <div class="col">
+                        <i class="bx bx-bus-school"></i>
+                        <span>SOFA PREMIUM</span><br>
+                        <span>12-11-2022</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item m-3">
+                <span>DATOS DEL PASAJERO (IDA)</span><br>
+                <span>PASAJERO 1 | </span>
+                <span>ASIENTO 4</span><br>
+            </li>
+            <li class="list-group-item">
+                <div class="dates">
+                    <div class="row form-floating">
+                        <div class="col">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected>Tipo de documento</option>
+                                    <option value="DNI">DNI</option>
+                                    <option value="Pass">Pasaporte</option>
+                                </select>
+                                <label for="floatingSelect">Tipo de documento</label>
+                            </div><br>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="nombre">
+                                <label for="floatingInput">Nombre(s)</label>
+                            </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected>Género</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                </select>
+                                <label for="floatingSelect">Género</label>
+                            </div><br>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="document">
+                                <label for="floatingPassword">N° Documento</label>
+                            </div><br>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="apellidos">
+                                <label for="floatingPassword">Apellidos</label>
+                            </div><br>
+                            <div class="form-floating">
+                                <input type="date" class="form-control" id="floatingPassword" placeholder="fecnac" min="2022-11-12">
+                                <label for="floatingPassword">Fecha de Nacimiento</label>
+                            </div><br>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="contact m-2">
+                    <span>DATOS DEL CONTACTO</span>
+                    <p>Tu pasaje será enviado a los siguientes datos.</p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Correo Electrónico</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">N° Celular</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item  m-2">
+                <span>DATOS DEL TITULAR DE LA TARJETA</span>
+                <p>Por tu seguridad ingresa tu información de pago</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Nombre(s)</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Apellidos</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">N° DNI o Pasaporte</label>
+                        </div>
+                    </div>
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            ACEPTO LOS TÉRMINOS Y CONDICIONES DEL SERVICIO DE VIAJE
+                        </label>
+                      </div>
+                </div><br>
+                <div class="div-btn" style="text-align: center;">
+                    <button class="btn btn-success form-control">Continuar</button>
+                </div>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    document.getElementById('#fecha').value = new Date().toDateInputValue();
+</script>
