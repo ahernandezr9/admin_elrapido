@@ -1,41 +1,52 @@
 <!-- cabecera-menu -->
 
 <div class="menu">
-    <nav class="navbar navbar-expand-lg bg-light ">
-      <div class="container-fluid ">
-        <a class="navbar-brand " href="#">
-          <i class="bx bx-bus-school"></i>
-          <p class="text-logo">
-            EL RÁPIDO
-          </p>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon text-primary"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto" >
-            <a class="nav-link" style="background-color: red" href="#">Agencias</a>
-            <a class="nav-link" style="background-color: yellow" href="#">Contacto</a>
-          </div>
-        </div>
+  <nav class="navbar navbar-expand-lg text-dark bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bx bx-bus-school"></i><br>
+        <span class="text-logo">
+          EL RÁPIDO
+        </span></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link link-dark px-5" href="#"><i style="font-size: 20px;" class="bx bx-store"></i> Agencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark" href="#"><i style="font-size: 20px;" class="bx bx-user"></i> Contacto</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <div class="d-flex justify-content-center align-middle" style="margin: 0;">
+              <div class="nav-link link-dark">Central de Atención <br>(01) 743 3838</div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="d-flex justify-content-center align-middle" style="margin: 0;">
+              <div class="nav-link link-dark pl-2 pr-2" style="font-size: 30px;"><i class="bx bx-message-alt-detail"></i></div>
+              <div class="nav-link link-dark">Whatsapp <br>943724242</div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </div>
-  <div class="d-flex justify-content-center">
-    <img src="../assets/titulo.jpg" width="50%">
-  </div>
-  <div class="container">
+    </div>
+  </nav>
+</div>
+<div class="d-flex justify-content-center">
+  <img src="../assets/titulo.jpg" width="50%">
+</div>
+<div class="container">
   <form class="row gx-3 gy-2 align-items-center justify-content-center">
     <div class="col-sm-3">
       <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-      <select class="form-select" id="specificSizeSelect" >
-        <option >Seleccione origen</option>
+      <select class="form-select" id="specificSizeSelect">
+        <option>Seleccione origen</option>
         <option value="{{destiny.destinyName}}" *ngFor="let destiny of destination">{{destiny.destinyName}}</option>
         <!-- <option value="2">Two</option>
         <option value="3">Three</option> -->
       </select>
-      
+
     </div>
     <div class="col-sm-3">
       <label class="visually-hidden" for="specificSizeSelect">Preference</label>
@@ -47,14 +58,16 @@
       </select>
     </div>
     <div class="col-auto">
-      <input type="date" name="calendar" id="calendar" style="height: 37px; border-radius: 5px; border: 0; text-align: center;">
+      <input type="date" name="calendar" id="calendar"
+        style="height: 37px; border-radius: 5px; border: 0; text-align: center;">
     </div>
     <div class="col-auto">
-      <input type="date" name="calendar" id="calendar" style="height: 37px; border-radius: 5px; border: 0; text-align: center;">
+      <input type="date" name="calendar" id="calendar"
+        style="height: 37px; border-radius: 5px; border: 0; text-align: center;">
     </div>
-    <div class="d-flex justify-content-center" >
+    <div class="d-flex justify-content-center">
       <button type="submit" class="btn btn-success" style="width: 250px;" routerLink="/salidas">COMPRAR</button>
     </div>
 
   </form>
-  </div>
+</div>
