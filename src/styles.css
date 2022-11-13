@@ -3,3 +3,56 @@ body{
     background-image: url("../src/app/imagenes/fondo_nubes.jpg");
     background-size: cover;
 }
+
+.tv{
+    background-image: url("../src/app/imagenes/Tv-Icon.png");
+}
+
+.escalera{
+    background-image: url("../src/app/imagenes/Escalera-icon.png");
+}
+
+.asiento-d{
+    background-image: url("../src/app/imagenes/silla.png");
+    display:inline-block;
+    background-size: cover;
+    border: 0;
+    height: 40px;
+    margin: 1px;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    font-family: Arial,serif;
+    font-size: 13px;
+    background-color: rgb(147, 170, 248);
+}
+
+.asiento-o{
+    background-image: url("../src/app/imagenes/silla.png");
+    display:inline-block;
+    background-size: cover;
+    border: 0;
+    height: 40px;
+    margin: 1px;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    font-family: Arial,serif;
+    font-size: 13px;
+    background-color: #5b5e63;
+}
+
+.asiento-s{
+    background-image: url("../src/app/imagenes/silla.png");
+    display:inline-block;
+    background-size: cover;
+    border: 0;
+    height: 40px;
+    margin: 1px;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    font-family: Arial,serif;
+    font-size: 13px;
+    background-color: rgb(255, 192, 20);
+}

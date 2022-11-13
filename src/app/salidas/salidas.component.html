@@ -1,5 +1,6 @@
 <div class="d-flex justify-content-end">
-    <button type="button" class="btn-close" aria-label="Close" onclick="" style="background-color: red;"></button>
+    <button type="button" class="btn-close" aria-label="Close" onclick="" routerLink=""
+        style="background-color: red;"></button>
 </div>
 
 <h2 style="text-align:center;">EL RÁPIDO</h2>
@@ -58,10 +59,10 @@
             <li class="list-group-item ">
                 <div class="row m-4">
                     <div class="col-3">
-                        <span class="bx bx-calendar">09/11/2022</span>
+                        <span class="bx bx-calendar"></span> 09/11/2022
                     </div>
                     <div class="col">
-                        <span class="bx bx-time">7:00pm</span>
+                        <span class="bx bx-time"></span> 7:00pm
                     </div>
                 </div>
                 <div class="row">
@@ -72,67 +73,54 @@
                         <div class="seating m-4" style="text-align: center;">
                             <table class="table">
                                 <tbody>
-                                  <tr>
-                                    <td>
-                                        <button class="btn btn-light">
-                                            <i class="bx bx-chair">1</i>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-light">
-                                            <i class="bx bx-chair">2</i>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-light">
-                                            <i class="bx bx-desktop"></i>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-light">
-                                            <i class="bx bx-chair">3</i>
-                                        </button>
-                                    </td>
                                     <tr>
                                         <td>
-                                            <button class="btn btn-light">
-                                                <i class="bx bx-chair">4</i>
-                                            </button>
+                                            <button class="btn asiento-d">1</button>
                                         </td>
                                         <td>
-                                            <button class="btn btn-light">
-                                                <i class="bx bx-chair">5</i>
-                                            </button>
+                                            <button class="btn asiento-s">2</button>
                                         </td>
                                         <td>
-                                            
+                                            <img src="../Tv-Icon.png" style="width: 35px; height: 35px;">
                                         </td>
                                         <td>
-                                            <button class="btn btn-light">
-                                                <i class="bx bx-chair">6</i>
-                                            </button>
+                                            <button class="btn asiento-d">3</button>
                                         </td>
-                                  </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn asiento-d">4</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn asiento-o">5</button>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+                                            <button class="btn asiento-d">6</button>
+                                        </td>
+                                    </tr>
 
                                 </tbody>
-                              </table>
+                            </table>
                         </div>
                     </div>
 
                     <div class="col-auto">
-                        
+
                         <span>ESTADO DE ASIENTOS</span>
                         <ul style="list-style: none;">
                             <li>
-                                <span class="bx bxs-checkbox" style="color: red;"></span>
+                                <span class="bx bxs-checkbox" style="color: rgb(147, 170, 248);"></span>
                                 <span>Disponibles</span>
                             </li>
                             <li>
-                                <span class="bx bxs-checkbox" style="color: green;"></span>
+                                <span class="bx bxs-checkbox" style="color: #5b5e63;"></span>
                                 <span>No Disponibles</span>
                             </li>
                             <li>
-                                <span class="bx bxs-checkbox" style="color: yellow;"></span>
+                                <span class="bx bxs-checkbox" style="color: rgb(255, 192, 20);"></span>
                                 <span>Seleccionado</span>
                             </li>
                         </ul><br>
@@ -144,7 +132,7 @@
                         <div style="text-align: center;">
                             <button class="btn btn-success" onclick="" routerLink="/pasajes">Continuar</button>
                         </div>
-                        
+
                     </div>
                 </div>
             </li>
