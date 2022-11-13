@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { SalidasComponent } from './salidas/salidas.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PasajesComponent } from './pasajes/pasajes.component';
-
+import {HttpClientModule} from  '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { PasajesComponent } from './pasajes/pasajes.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

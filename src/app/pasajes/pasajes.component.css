@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+.title{
+    color: green;
+    font-family: Rubik;
+    font-weight: bold;
+}
+.ciudad{
+    font-family: 'Cambria';
+    font-weight: bold; /*negrita*/
+    text-transform: uppercase; /*transformacion a mayuscula*/
+    font-size: 10px;
+}
+
+.terminal{
+    font-family:  'Arial Narrow';
+    font-weight: bold; /*negrita*/
+    color: green;
+     font-size: 20px;
+}
+
+.tipo{
+    font-size: 12px;
+}
+
+.direccion{
+    font-size: 12px;
+}
+
+.person_dates{
+    font-weight: bold;
+}
+
+.passenger{
+    color: rgb(0, 121, 250);
+}
+
+.seating{
+    background-color: green;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+}
+
+.form-check-label{
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+p{
+    font-size: 12px;
+    color: darkgray;
+}
