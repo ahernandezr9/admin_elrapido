@@ -10,7 +10,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link link-dark px-5" href="#"><i style="font-size: 20px;" class="bx bx-store"></i> Agencias</a>
+            <a class="nav-link link-dark px-5" href="#"><i style="font-size: 20px;" class="bx bx-store"></i>
+              Agencias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link link-dark" href="#"><i style="font-size: 20px;" class="bx bx-user"></i> Contacto</a>
@@ -24,7 +25,8 @@
           </li>
           <li class="nav-item">
             <div class="d-flex justify-content-center align-middle" style="margin: 0;">
-              <div class="nav-link link-dark pl-2 pr-2" style="font-size: 30px;"><i class="bx bx-message-alt-detail"></i></div>
+              <div class="nav-link link-dark pl-2 pr-2" style="font-size: 30px;"><i
+                  class="bx bx-message-alt-detail"></i></div>
               <div class="nav-link link-dark">Whatsapp <br>943724242</div>
             </div>
           </li>
@@ -38,11 +40,12 @@
 </div>
 <div class="container">
   <form class="row gx-3 gy-2 align-items-center justify-content-center">
+
     <div class="col-sm-3">
       <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-      <select class="form-select" id="specificSizeSelect">
-        <option>Seleccione origen</option>
-        <option value="{{destiny.destinyName}}" *ngFor="let destiny of destination">{{destiny.destinyName}}</option>
+      <select class="form-select" #mySelect (change)="openlistOrigin(mySelect.value)" id="specificSizeSelect">
+        <option value="-1">Seleccione origen</option>
+        <option *ngFor="let origin of origins" value="{{origin._id}}">{{origin.originName}}</option>
         <!-- <option value="2">Two</option>
         <option value="3">Three</option> -->
       </select>
@@ -50,23 +53,24 @@
     </div>
     <div class="col-sm-3">
       <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-      <select class="form-select" id="specificSizeSelect">
+      <select class="form-select" #mySelect2 (change)="selectDestiny(mySelect2.value)" id="specificSizeSelect">
         <option selected>Seleccione destino</option>
-        <option *ngFor="let origin of origins" value="{{origin.originName}}">{{origin.originName}}</option>
+        <option value="{{destiny._id}}" *ngFor="let destiny of destination">{{destiny.destinyName}}</option>
+
         <!-- <option value="2">Two</option>
         <option value="3">Three</option> -->
       </select>
     </div>
     <div class="col-auto">
-      <input type="date" name="calendar" id="calendar"
+      <input type="date" name="calendar" [(ngModel)]="tick.departureDate" id="calendar"
         style="height: 37px; border-radius: 5px; border: 0; text-align: center;">
     </div>
     <div class="col-auto">
-      <input type="date" name="calendar" id="calendar"
+      <input type="date" name="calendar" id="calendar" [(ngModel)]="tick.returnDate"
         style="height: 37px; border-radius: 5px; border: 0; text-align: center;">
     </div>
     <div class="d-flex justify-content-center">
-      <button type="submit" class="btn btn-success" style="width: 250px;" routerLink="/salidas">COMPRAR</button>
+      <button type="submit" class="btn btn-success" style="width: 250px;" (click)="comprar()">COMPRAR</button>
     </div>
 
   </form>

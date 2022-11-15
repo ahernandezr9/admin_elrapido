@@ -7,10 +7,10 @@
 <div class="container">
     <div class="row ruta m-5" style="background-color: white;">
         <div class="col">
-            <span class="ciudad">San Juan de Lurigancho</span><br>
-            <span class="terminal">TERMINAL SJL</span><br>
+            <span class="ciudad">{{origin.originName}}</span><br>
+            <span class="terminal">TERMINAL {{origin.originName}}</span><br>
             <span class="tipo">Origen</span><br>
-            <span class="direccion">AV. SANTA ROSA</span>
+            <span class="direccion">{{origin.avenueName}}</span>
         </div>
         <div class="col">
             <span class="ciudad">Cusco</span><br>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="col m-4">
                         <span class="bx bx-user"></span>
-                        <span class="m-2">21</span><br>
+                        <span class="m-2">{{countAsientoLibre}}</span><br>
                         <span>Asientos libres</span>
                     </div>
                 </div>
@@ -70,8 +70,16 @@
                         <div style="text-align: center;">
                             <span>SELECCIONE SU ASIENTO</span>
                         </div>
+                        <div class="row m-3 d-flex justify-content-around ">
+                            <div class="col-5 p-3 btn  rounded-pill"  [ngClass]="btnColor1" (click)="pisoBus(0)"  style="text-align: center;">
+                                <span>PRIMER PISO</span>
+                            </div>
+                            <div class="col-5 p-3 btn b rounded-pill"  [ngClass]="btnColor2" (click)="pisoBus(1)" style="text-align: center;">
+                                <span>SEGUNDO PISO</span>
+                            </div>
+                        </div>
                         <div class="seating m-4" style="text-align: center;">
-                            <table class="table">
+                            <!--   <table class="table">
                                 <tbody>
                                     <tr>
                                         <td>
@@ -103,7 +111,19 @@
                                     </tr>
 
                                 </tbody>
-                            </table>
+                              </table>-->
+                            <div class="containerbus">
+                                <!-- Squared ONE -->
+                                <div class="autobus border border-dark ">
+                                    <div  class="row  m-3">
+                                        <div class="col-3 mb-5"*ngFor="let seat of seatList">
+                                            <div class="asiento-l butaca" (click)="selectAsiento(seat.number)" [ngClass]="'s'+seat.status">
+                                                {{convertInt(seat.number)}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -125,10 +145,12 @@
                             </li>
                         </ul><br>
                         <span>Seleccionado: </span>
-                        <span>1</span>
+                        <div class="row">
+                            <div class="col-4" *ngFor="let item of coutSelect" > <h4> {{item +','}}</h4></div>
+                        </div>
                         <br><br>
                         <span>Total a pagar: S/.</span>
-                        <span>75</span><br><br>
+                        <span>{{coutSelect.length * 75}}</span><br><br>
                         <div style="text-align: center;">
                             <button class="btn btn-success" onclick="" routerLink="/pasajes">Continuar</button>
                         </div>

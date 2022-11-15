@@ -16,4 +16,13 @@ export class CrudService {
   getAllOrigin(){
     return this.http.get("http://localhost:8080/v1/BusSale/originList");
   }
+
+  getBusAvailable(idOrigin:any,idDestiny:any,status:any){
+    return this.http.post("http://localhost:8080/v1/BusSale/busAvailable",{
+      "idOrigin":idOrigin,
+      "idDestiny":idDestiny,
+      "status":status
+    });
+    
+  }
 }

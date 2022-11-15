@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PasajesComponent implements OnInit {
 
-  constructor() { }
+  //tick = new Ticket()
 
+  constructor() { }
+  
   ngOnInit(): void {
+   /* this.tick=JSON.parse(JSON.stringify(localStorage.getItem("pasaje")))
+    console.log(this.tick)*/
   }
 
 }
