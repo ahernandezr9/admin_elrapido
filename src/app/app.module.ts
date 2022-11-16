@@ -7,14 +7,16 @@ import { AppComponent } from './app.component';
 import { SalidasComponent } from './salidas/salidas.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PasajesComponent } from './pasajes/pasajes.component';
-import {HttpClientModule} from  '@angular/common/http'
+import {HttpClientModule} from  '@angular/common/http';
+import { TicketComponent } from './ticket/ticket.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SalidasComponent,
     InicioComponent,
-    PasajesComponent
+    PasajesComponent,
+    TicketComponent
   ],
   imports: [
     BrowserModule,

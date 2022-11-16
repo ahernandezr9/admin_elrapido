@@ -145,13 +145,96 @@
                       </div>
                 </div><br>
                 <div class="div-btn" style="text-align: center;">
-                    <button class="btn btn-success form-control">Continuar</button>
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    CONTINUAR
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">PAGO</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row ruta m-5" style="background-color: white; border-radius: 20px;">
+                        <span style="text-align: center; color: green; margin: 10px; font-size: 50px;">PAGO</span>
+                        <span class="m-2 p-2" style="font-weight: bolder; font-size: 20px;">DATOS DEL TITULAR DE LA TARJETA</span>
+                        <div class="col">
+                          
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="nombre" value="AQUI COLOCA EL NOMBRE">
+                                <label for="floatingInput">NOMBRES(s)</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="nombre" value="AQUI COLOCA EL APELLIDO">
+                                <label for="floatingInput">APELLIDOS</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="nombre" value="AQUI COLOCA EL DNI">
+                                <label for="floatingInput">DNI</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="nombre" value="AQUI COLOCA LOS ASIENTOS">
+                                <label for="floatingInput">CANTIDAD DE ASIENTOS</label>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput"
+                                            placeholder="nombre">
+                                        <label for="floatingInput">N° TARJETA</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput"
+                                            placeholder="nombre">
+                                        <label for="floatingInput">CLAVE</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <br><br>
+                            <div style="text-align: center;">
+                                <span class="m-2" style=" font-weight: bold; font-size: 25px; color: red;">IMPORTE TOTAL: </span><br>
+                                <span class="m-2" style=" font-weight: bold; font-size: 25px; color: red;">S/. </span>
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" routerLink="/ticket" >PAGAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                    
                 </div>
                 
             </li>
         </ul>
     </div>
-</div>
+ 
+
 <script>
     document.getElementById('#fecha').value = new Date().toDateInputValue();
 </script>
